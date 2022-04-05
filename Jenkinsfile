@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        secret = credentials('prashant-aws-cred')
+        secret = credentials('aws-cred')
     }
     stages {
         stage('build') {

@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-               echo "prashant shinde ok"
+               sh 'aws s3 cp index.html s3://codedeploydemobucket125'
             }
     
     }
